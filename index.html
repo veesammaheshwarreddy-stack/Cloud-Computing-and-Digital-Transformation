@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing and Digital Transformation</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fc;
+            color: #263238;
+        }
+        
+        header {
+            background: linear-gradient(120deg, #123b75, #168aad);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+        
+        header h1 {
+            margin-bottom: 10px;
+        }
+        
+        nav {
+            background: #092c50;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+        
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+        
+        h2 {
+            color: #145da0;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #d9e2ef;
+            transition: transform 0.2s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .icon {
+            font-size: 38px;
+        }
+        
+        .demo {
+            background: #e1f3ff;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        button {
+            background: #1261a0;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 8px;
+        }
+        
+        button:hover {
+            background: #083d77;
+        }
+        
+        #result {
+            font-weight: bold;
+            margin-top: 15px;
+            color: #14532d;
+        }
+        
+        footer {
+            text-align: center;
+            background: #092c50;
+            color: white;
+            padding: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>☁ Cloud Computing</h1>
+        <h2 style="color:white">Digital Transformation</h2>
+        <p>Transforming businesses through smart digital technologies</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Cloud Services</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#demo">Demo</a>
+    </nav>
+
+    <section id="about">
+        <h2>About the Project</h2>
+        <p>
+            Cloud computing provides computing resources such as storage, servers, databases and software over the internet. Digital transformation uses these technologies to improve business operations, customer experiences and decision-making.
+        </p>
+    </section>
+
+    <section id="services">
+        <h2>Cloud Computing Services</h2>
+
+        <div class="cards">
+            <div class="card">
+                <div class="icon">☁️</div>
+                <h3>Cloud Storage</h3>
+                <p>Store and access digital files online from different devices.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🖥️</div>
+                <h3>Virtual Servers</h3>
+                <p>Run applications without maintaining physical servers.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📊</div>
+                <h3>Data Analytics</h3>
+                <p>Analyze business data to support better decisions.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🤝</div>
+                <h3>Online Collaboration</h3>
+                <p>Help teams share information and work together remotely.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits">
+        <h2>Benefits of Digital Transformation</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Cost Reduction</h3>
+                <p>Reduce the need to purchase and maintain physical hardware.</p>
+            </div>
+
+            <div class="card">
+                <h3>Scalability</h3>
+                <p>Increase or decrease computing resources when needed.</p>
+            </div>
+
+            <div class="card">
+                <h3>Accessibility</h3>
+                <p>Access authorized services from different locations.</p>
+            </div>
+
+            <div class="card">
+                <h3>Efficiency</h3>
+                <p>Automate workflows and improve productivity.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo">
+        <h2>Interactive Cloud Transformation Demo</h2>
+
+        <div class="demo">
+            <p>Choose a digital transformation activity:</p>
+
+            <button onclick="showInfo('storage')">Cloud Storage</button>
+            <button onclick="showInfo('business')">Digital Business</button>
+            <button onclick="showInfo('analytics')">Data Analytics</button>
+
+            <p id="result">Your selected information will appear here.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Cloud Computing and Digital Transformation Project</p>
+        <p>Designed using HTML, CSS and JavaScript</p>
+    </footer>
+
+    <script>
+        function showInfo(type) {
+            const result = document.getElementById("result");
+
+            if (type === "storage") {
+                result.textContent =
+                    "Cloud storage allows users to save and access files online.";
+            } else if (type === "business") {
+                result.textContent =
+                    "Digital business uses technology to improve services and workflows.";
+            } else if (type === "analytics") {
+                result.textContent =
+                    "Data analytics helps organizations discover patterns and make decisions.";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
